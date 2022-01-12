@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> Project-78 </title>
+        <link rel="stylesheets" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1 id="heading"> My Family Book </h1>
+
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51-8FZDrnsL._SX258_BO1,204,203,200_.jpg" id="fam" width="410px" height="525px;">
+
+        <br> <br>
+        
+        <button type="button" onclick="update()"> Next </button>
+
+        <hr>
+
+        <script>
+
+        var names=[
+            "Deepak Sharma",
+            "Gurpreet Kaur Sharma",
+            "Himank Sharma",
+            "Yashica Sharma"
+        ];
+
+        var images=[
+            "dad.jpg",
+            "mom.jpg",
+            "bro.jpg",
+            "yashi.jpg"
+        ];
+
+        var i=0;
+        function update(){
+            document.getElementById("heading").innerHTML=names[i];
+            document.getElementById("fam").src=images[i];
+            i++
+            if(i==4){
+                i=0;
+            }
+        }
+
+         </script>
+    </body>
+</html>
